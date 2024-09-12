@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HayaHaya Landscaping</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">HayaHaya Landscaping</h1>
+  <p id="description">Please fill out this form with the required information</p>
+  <form method="post" action='https://register-demo.org' id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Enter Your Name: </label>
+      <input id="name" name="name" type="text" placeholder="ex. Joe Smith" required>
+      
+      <label id="email-label" for="email">Enter Your Email: </label>
+      <input id="email" name="email" type="email" placeholder="ex. joe.smith@gmail.com" required>
+      <label id="name-label" for="name">Please enter your property address: </label>
+      <input id="address" name="address" type="text" placeholder="ex.1111 Wallace Street Concord, AL" required>
+      
+      <label id="number-label" for="number">Enter Your Phone Number: </label>
+      <input id="number" name="number" type="number" min="1000000000" max="9999999999" placeholder="ex. 2069194758">
+      
+      <label for="contact-method">Please choose the best way to contact you: </label>
+      <select id="dropdown" name="contact-method">
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+      </select>
+    
+      <p>Please choose your type of property:</p>
+        <label for="Residential"><input id="Residential" type="radio" name="type" class="inline" checked/> Residential</label>
+        <label for="Commercial"><input id="Commercial" type="radio" name="type" class="inline" />Commercial</label>
+
+
+      <label for="service-estimate">Please choose what kind of service you would like a free estimate for: </label>
+      <select id="dropdown" name="service-estimate">
+        <option value="lawn-care">Lawn Maintenance</option>
+        <option value="flower-planting">Flower Planting</option>
+        <option value="Tree-removal">Tree Removal</option>
+        <option value="other">Other</option>
+      </div>
+      
+      <label for="comments">Any comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Additional comments..."></textarea>
+      
+      <input id="submit" type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+</html>
